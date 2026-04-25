@@ -1,8 +1,8 @@
 def is_prime(n):
-    if n < 2:
+    if n <= 1:
         return False
     
-    for son in range(2, n):
+    for son in range(2, int(n ** 0.5) + 1):
         if n % son == 0:
             return False
     return True
